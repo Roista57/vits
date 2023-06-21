@@ -104,3 +104,19 @@ python server.py --config_path path/to/config.json --model_path path/to/model.pt
 docker run -itd --gpus all --name "Container name" -e NVIDIA_DRIVER_CAPABILITIES=compute,utility -e NVIDIA_VISIBLE_DEVICES=all "Image name"
 ```
 
+# Running in Anaconda
+### windows
+```sh
+conda create -n vits python=3.8
+activate vits
+git clone https://github.com/Roista57/vits.git
+cd vits
+# install CMake and Visual Studio Build Tools. You only need to install CMake and Visual Studio Build Tools once.
+pip install torch==1.13.1 torchvision==0.14.1 torchaudio==0.13.1 --index-url https://download.pytorch.org/whl/cu117
+pip install -r requirements.txt
+cd monotonic_align
+mkdir monotonic_align
+python setup.py build_ext --inplace
+cd ..
+# Proceed with the 'Create Datasets' section.
+```
