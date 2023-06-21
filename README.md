@@ -118,5 +118,5 @@ cd monotonic_align
 mkdir monotonic_align
 python setup.py build_ext --inplace
 cd ..
-# Proceed with the 'Create Datasets' section.
+# Proceed with the 'Create datasets' section.
 ```
