@@ -2,7 +2,7 @@
 # How to use
 ## Clone this repository
 ```sh
-git clone https://github.com/ouor/vits.git
+git clone https://github.com/Roista57/vits.git
 ```
 ## Choose cleaners
 
@@ -14,6 +14,15 @@ git clone https://github.com/ouor/vits.git
 ```sh
 python -m venv .venv
 .\.venv\Scripts\activate
+```
+## Install Cmake
+### windows
+```sh
+https://cmake.org/download/
+```
+### Linux
+```sh
+sudo apt install cmake
 ```
 ## Install pytorch
 ```sh
